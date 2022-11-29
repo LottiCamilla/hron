@@ -29,6 +29,6 @@ from employee
 where last_name = 'King';
 
 -- coalesce: if commission is null use 0 instead
-select employee_id, first_name, last_name, salary, commission, coalesce(commission, 0) as "quota"
+select employee_id, first_name, last_name, salary, commission, salary * coalesce(commission, 0) as "quota"
 from employee
 where last_name = 'King';

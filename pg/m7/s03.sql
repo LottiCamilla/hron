@@ -5,6 +5,7 @@ begin
     raise notice 'hello';
 end $$;
 
+set client_min_messages to 'debug';
 -- set client_min_messages to 'log';
 -- set client_min_messages to 'notice';
 -- set client_min_messages to 'warning';

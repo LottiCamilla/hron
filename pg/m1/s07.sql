@@ -92,12 +92,12 @@ where region_id in (4, 2);
 -- case sensitive!
 select *
 from region
-where name in ('Europe', 'asia');
+where name in ('Europe', 'Asia');
 
 -- beware of null
 select *
 from region
-where region_id not in (2, 3, null);
+where region_id not in (2, 3); -- (2, 3, null) IN non funziona con NULL
 
 select *
 from region

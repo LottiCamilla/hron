@@ -44,7 +44,7 @@ limit 10;
 -- second page
 select first_name, last_name
 from employee
-offset 10 limit 10;
+offset 10 limit 10; -- offset e limit sono invertibili
 
 -- eleventh page
 select first_name, last_name

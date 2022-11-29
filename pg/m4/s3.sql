@@ -30,7 +30,7 @@ order by sum_salary desc;
 -- same, but showing department name in result set
 select d.name, max(e.salary) as sum_salary
 from employee e join department d
-using (department_id)
+	using (department_id)
 group by d.name
 order by sum_salary desc;
 
